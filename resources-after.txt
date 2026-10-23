@@ -1,0 +1,25 @@
+=== VPS listo para despliegues ===
+Fecha: Fri Oct 23 17:57:03 UTC 2026
+
+--- Sistema operativo ---
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+5.15.0-198-generic
+
+--- Memoria (free -h) ---
+               total        used        free      shared  buff/cache   available
+Mem:           957Mi       134Mi       565Mi       3.0Mi       257Mi       681Mi
+Swap:             0B          0B          0B
+
+--- Disco (df -h) ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda1        25G  4.4G   20G  19% /
+
+--- Cambios aplicados ---
+Antes: 611 MiB disponibles. Despues: ver free -h arriba (aprox. +70 MiB).
+Desactivados: apport, snapd (service + socket), multipathd (service + socket).
+No instalados: cups, avahi-daemon, modemmanager, bluetooth, popularity-contest.
+snapd: disable no bastaba (lo despertaba snapd.socket tras reiniciar); se uso mask.
+unattended-upgrades: se mantiene activo a proposito (parches de seguridad).
+SSH verificado tras los cambios y tras reiniciar.
+
+VPS listo para despliegues.
